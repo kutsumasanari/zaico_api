@@ -1,14 +1,12 @@
 from typing import Union
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class ProductCreate(BaseModel):
-    Product_name: str = Field(max_lenth=12)
-    Price: int
+    product_name: str = Field(max_lenth=12)
+    price: int
 
-class Product(BaseModel):
-    # Product_id: int
-    Product_name: str = Field(max_lenth=12)
-    Price: int
+class Product(ProductCreate):
+    product_id: int
 
     class Config:
         orm_mode = True

@@ -1,3 +1,5 @@
+pip3 install fastapi
+
 from fastapi import Depends, FastAPI, HTTPException, Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse

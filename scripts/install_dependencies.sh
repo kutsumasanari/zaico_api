@@ -11,5 +11,5 @@ virtualenv environment
 source environment/bin/activate
 sudo apt-get -y install uvicorn
 pip3 install starlette
-pip3 install "fastapi[all]"
+pip install fastapi[all]
 pip3 install sqlalchemy

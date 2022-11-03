@@ -6,6 +6,6 @@ pip3 install virtualenv
 cd /home/ec2-user/zaico_api2
 virtualenv environment
 source environment/bin/activate
-sudo apt install uvicorn
+pip3 install uvicorn
 pip3 install fastapi
 pip3 install sqlalchemy

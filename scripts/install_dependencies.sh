@@ -7,6 +7,6 @@ pip3 install --upgrade setuptools
 cd /home/ec2-user/zaico_api2
 virtualenv environment
 source environment/bin/activate
-pip install fastapi[all]
+pip3 install fastapi
 sudo apt-get -y install uvicorn
 pip3 install sqlalchemy
